@@ -8,38 +8,31 @@
     <style>
         /* variables */
         :root {
-            --primario:orange;
-            --secundario:red;
-            --alerta:blue;
-            --fondo:rgb(226, 227, 228);
+            --primario:#02AEC2;
+            --secundario:#C21602;
+            --texto:hsl(209, 98%, 38%);
+            --fondo:#e0f7fa;
             --texto-tamanio:12px;
             --margen:0px;
         }
         /* estilos por defecto */
         body {
-            margin: 0;
+            margin: var(--margen);
             background-color: var(--fondo);
-            color: var(--secundario);
+            color: var(--texto);
             font-family: Arial, Helvetica, sans-serif;
             font-size: var(--texto-tamanio);
         }
-        h1 {
-            font-size: var(--texto-tamanio);
-            color: var(--primario);
-        }
-        h2 {
-            font-size: var(--texto-tamanio);
-            color: var(--primario);
-        }
-        h3 {
-            font-size: var(--texto-tamanio);
-            color: var(--primario);
-        }
+        
 
     </style>
 </head>
 <body>
-    <h1>Título</h1>
-    Cualquier cosa
+    <nav>
+        <div>Tecnología I</div>
+        <div>
+            <span>Menu</span>
+        </div>
+    </nav>
 </body>
 </html>
