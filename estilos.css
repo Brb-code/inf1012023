@@ -42,14 +42,17 @@ ul { list-style : none; }
 
 /* titular de contenido */
 #content { 
-	margin: 10px auto; 
+	margin: 0px auto; 
 	width: 960px; 
 }
 
 /* encabezamiento */
 #logo p { 
 	padding-left: 10px; 
-	color: var(--texto-secondary);
+	color: var(--fondo-secondary);
+}
+#logo>h1>a {
+	color: var(--fondo);
 }
 
 /* menu con pestanas horizontales */	
@@ -70,7 +73,7 @@ ul { list-style : none; }
 	text-decoration: none; 
 	background: linear-gradient(var(--fondo), #ccc);
 	border-radius: 8px 8px 0px 0px;
-	margin: 1px;
+	margin: 0px;
 	border: 1px solid var(--texto);	
 }
 #tabs li a:hover { 
@@ -173,7 +176,9 @@ img {
 .mostrar-modal{
 	display: block;
 }
-
+.separador {
+	height: 0px;
+}
 @media screen and (max-width:956px) {
 	#content {
 		width: 100%;
@@ -182,14 +187,33 @@ img {
 		float: left;
 		width: 70%;
 	}
+	#tabs {
+		position: fixed;
+		width: 100%;
+		padding-right: 30px;
+	}
+	#tabs li a {
+		float: left;
+		padding: 5px 0;
+		width: 70px;		
+	}	
+	.separador {
+		height: 50px;
+	}
 }
 @media screen and (max-width:500px)  {
 	#content {
-		width: 100%;
-		margin: 0px;		
+		width: 100%;		
 	}
 	.left {
 		float: none;
 		width: 100%;
+	}
+	#tabs li a {
+		display: none;
+	}
+	#search {
+		width: 100%;
+		text-align: center;
 	}
 }
