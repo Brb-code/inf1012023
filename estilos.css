@@ -4,7 +4,7 @@
 	--fondo-secondary:#dedede;
 	--texto: #454545;
 	--texto-secondary: #808080;
-	--tamanio_base: 0.7em;
+	--tamanio_base: 0.8em;
 }
 * {
 	margin: 0;
@@ -58,6 +58,7 @@ ul { list-style : none; }
 	background: #fff url(imagenes/bigbox.gif) no-repeat top left; 
 	height: 64px; 
 	text-align: center;
+	
 }
 #tabs li a { 
 	float: left; 
@@ -70,7 +71,7 @@ ul { list-style : none; }
 	background: linear-gradient(var(--fondo), #ccc);
 	border-radius: 8px 8px 0px 0px;
 	margin: 1px;
-	border: 1px solid var(--texto);
+	border: 1px solid var(--texto);	
 }
 #tabs li a:hover { 
 	background: linear-gradient(var(--fondo), #b9f5ce);
@@ -139,15 +140,31 @@ img {
 	box-shadow: 5px 5px var(--fondo-secondary) ;		
 	margin: 0 12px 0 0;
 }
+.box {
+	display: flex;
+	overflow-x: auto;
+}
 .smallbox p {
 	text-align: justify;
+	min-width:200px;
 }
 
-	
-
-
-/* varias formas */
-.left_articles .buttons { float: right; height: 20px; }
-.bluebtn { background: #488EB2 url(imagenes/bluebtn.gif) no-repeat; width: 100px; padding: 1px 16px 5px 16px; color: #fff; text-decoration: none; }
-.greenbtn { background: #488EB2 url(imagenes/greenbtn.gif) no-repeat; padding: 1px 17px 5px 16px; color: #fff; text-decoration: none; }
-.bluebtn:hover, .greenbtn:hover { background: #488EB2 url(imagenes/hoverbtn.gif) no-repeat; color: #fff; }
+@media screen and (max-width:956px) {
+	#content {
+		width: 100%;
+	}
+	.left {
+		float: left;
+		width: 70%;
+	}
+}
+@media screen and (max-width:500px)  {
+	#content {
+		width: 100%;
+		margin: 0px;		
+	}
+	.left {
+		float: none;
+		width: 100%;
+	}
+}
