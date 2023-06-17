@@ -9,7 +9,7 @@
 * {
 	margin: 0;
 	padding: 0;
-}
+}*
 body { 	
 	font-size: var(--tamanio_base); 
 	font-family: Tahoma,
@@ -126,16 +126,17 @@ ul { list-style : none; }
 	margin-right: auto;
 	border-radius: 2px;
 }
+/*
 img {
 	width: 100%;
 	height: 100px;
 
 }
-
+*/
 /* tercios inferiores */
 .smallbox { 
 	float: left;
-	width: 203px;
+	width: 180px;
 	color: var(--texto-secondary); 
 	padding: 10px;  
 	border: 1px solid var(--texto);
@@ -147,9 +148,10 @@ img {
 	display: flex;
 	overflow-x: auto;
 }
+/*justificacion del ancho de la columna de material de respaldo*/
 .smallbox p {
 	text-align: justify;
-	min-width:200px;
+	min-width:100px;
 }
 /* modal */
 #open-modal{
@@ -216,4 +218,41 @@ img {
 		width: 100%;
 		text-align: center;
 	}
+}
+.redimensionar {
+  max-width:90%;
+  max-height:90%;
+}
+.calendari{
+	float: right;
+	width: 450px;
+	height: 250px;
+  text-align: center;
+	background-color:#5B76FC  ;
+ margin-top: 120px;
+ border-style: solid;
+ border-radius: 20px;
+
+
+}
+ol{
+list-style:none;
+display:grid;
+grid-template-columns: repeat(7, 1fr);
+margin: 20px;
+padding: 0;
+
+
+}
+.first_day{
+grid-column-start: 4;
+
+}
+.day-name{
+background: #eee;
+font-weight: bold;
+
+}
+.actual{
+	background-color: black;
 }

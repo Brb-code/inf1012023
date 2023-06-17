@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="estilos.css" type="text/css" />
   </head>
   <body>
-    <!-- modal-->
+    <!-- modal--><nav>
     <div id="open-modal" class="ocultar-modal">
       <div>
         <iframe
@@ -24,21 +24,19 @@
         >
       </div>
     </div>
+  </nav>
     <!-- Contenido -->
     <div id="content">
       <div id="tabs">
         <ul>
           <li>
-            <a href="#inicio"><span class="key">C</span>ontenidoo</a>
+            <a href="#inicio"><span class="key">C</span>ontenido</a>
           </li>
           <li>
             <a href="#manuales"><span class="key">M</span>anuales</a>
           </li>
           <li>
             <a href="#videos"><span class="key">V</span>ideos</a>
-          </li>
-          <li>
-            <a href="#foro"><span class="key">F</span>oro</a>
           </li>
         </ul>
         <div id="search">
@@ -48,17 +46,20 @@
           </div>
         </div>
       </div>
-      <!-- Primer contenido-->
+      <nav>
+      
       <div class="separador">&nbsp;</div>
       <div class="left">
         <div class="gbox" id="inicio">
           <p>CONTENIDO</p>
         </div>
+<!-- Primer contenido-->
         <div class="left_articles">
           <div class="calendar">
             <p>JUN.</p>
             13th
           </div>
+
           <h2><a href="#">HISTORIA DE LA COMPUTACION</a></h2>
           <p class="description">
             Te explicamos y resumimos la historia de la computadora, como eran
@@ -80,6 +81,8 @@
             >
           </p>
         </div>
+        <p><br> </p>
+        
         <!-- Segundo contenido-->
         <div class="left_articles">
           <div class="calendar">
@@ -104,6 +107,60 @@
             >
           </p>
         </div>
+        <p><br> </p>
+
+        <!-- Tercer contenido-->
+        <div class="left_articles">
+          <div class="calendar">
+            <p>ABR.</p>
+            09no
+          </div>
+          <h2><a href="#">GITHUB</a></h2>
+          <p class="description">
+            En un nivel más alto, GitHub es un sitio web y un servicio en la nube que 
+            ayuda a los desarrolladores a almacenar y administrar su código, al igual 
+            que llevar un registro y control de cualquier cambio sobre este código.
+          </p>
+          <hr />
+          <h3>¿Qué es GITHub y para qué sirve?</h3>
+          <p>
+            Github es un repositorio online gratuito que permite gestionar 
+            proyectos y controlar versiones de código. Es muy utilizado por 
+            desarrolladores para
+            <a
+              href="#"
+              onclick="document.getElementById('frame').src='./paginas/gibhub.html';document.getElementById('open-modal').classList.replace('ocultar-modal','mostrar-modal')"
+              >Leer más ...</a
+            >
+          </p>
+        </div>
+        <p><br> </p>
+
+        <!-- Cuarto contenido-->
+        <div class="left_articles">
+          <div class="calendar">
+            <p>MAR.</p>
+            21vo
+          </div>
+          <h2><a href="#">MARKDOWN</a></h2>
+          <p class="description">
+            Markdown es un lenguaje de marcado que facilita la aplicación de 
+            formato a un texto empleando una serie de caracteres de una forma especial.
+          </p>
+          <hr />
+          <h3>Qué es Markdown y por qué deberías empezar a usarlo</h3>
+          <p>
+            Hace unas semanas, me recomendaron usar Markdown. La verdad es 
+            que solo conocía de oídas este lenguaje, pero me dijeron que 
+            seguro que me encantaba, ya que
+            <a
+              href="#"
+              onclick="document.getElementById('frame').src='./paginas/markdown.html';document.getElementById('open-modal').classList.replace('ocultar-modal','mostrar-modal')"
+              >Leer más ...</a
+            >
+          </p>
+        </div>
+        <p><br> </p>
         <!-- OTRO SEGMENTO-->
         <div class="gbox" id="manuales">
           <p>MATERIAL DE RESPALDO Y DOCUMENTACION PARA DESCARGAR</p>
@@ -128,6 +185,7 @@
           <div class="smallbox">
             <h3>
               <a
+                target="_blank"
                 href="https://www.uv.mx/personal/gerhernandez/files/2011/04/historia-compuesta.pdf"
                 >HISTORIA DE LA COMPUTACION</a
               >
@@ -139,8 +197,167 @@
               de salida.
             </p>
           </div>
+          <div class="smallbox">
+            <h3>
+              <a
+                target="_blank"
+                href="https://latexref.xyz/dev/latex2e-es.pdf"
+                >MANUAL DE LATEX2E(2023)</a
+              >
+            </h3>
+            <p>
+              Este documento es un manual de referencia extraoficial para LATEX, un sistema de preparacion
+              de documentos, version Enero 2023.Este manual se tradujo originalmente de LATEX.HLP v1.0a en la Biblioteca de ayuda de VMS.
+              
+            </p>
+          </div>
+
         </div>
+        <p><br> </p>
+        <!-- Segunda fila  MATERIAL DE RESPALDO Y DOCUMENTACION PARA DESCARGAR-->
+        <div class="box">
+          <div class="smallbox">
+            <h3>
+              <a
+                target="_blank"
+                href="http://fobos.inf.um.es/R/taller5j/30-markdown/guiabreve.pdf"
+                >MANUAL DE MARKDOWN</a
+              >
+            </h3>
+            <p>
+              markdown: guia breve y detallada
+              A Maurandi JA Palazon
+              13 de diciembre de 2013, Zaragoza
+            </p>
+          </div>
+        </div>
+        <!-- OTRO SEGMENTO DE VIDEOS-->
+        <div class="gbox" id="videos">
+          <p>MATERIAL DE APOYO EN VIDEOS</p>
+        </div>
+        <div class="box">
+          
+          <div class="smallbox">
+            
+            <h3>
+              
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=C6dUo8IVo7w&list=PLsoxOafxTtv9N-kxnj4kfq_JeXz_UqDyB&index=3"
+                >VIDEO TUTORIAL DE LATEX</a>
+            </h3>
+            <center><img class="redimensionar" src="imagenes/L1.jpg" ></center>
+           <p>Curso de Latex (Paso a paso) desde 0,contiene 9 videos</p>
+          </div>
+
+          <div class="smallbox">
+            <h3>
+              <a
+              target="_blank"
+                href="https://www.youtube.com/watch?v=rr2H086z16s&list=PLPl81lqbj-4LKo66cEts5yC_AjOvqKptm"
+                >VIDEO TUTORIAL HTML Y CSS</a
+              >
+            </h3>
+            <center><img class="redimensionar" src="imagenes/HTML.JPG" ></center>
+            <p>
+            </p>
+          </div>
+
+          <div class="smallbox">
+            
+            <h3>
+              
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=Eh-s-n_6zNQ&list=PLhSj3UTs2_yVC0iaCGf16glrrfXuiSd0G"
+                >VIDEO TUTORIAL DE JAVASCRIPT</a>
+            </h3>
+            <center><img class="redimensionar" src="imagenes/J1.jpg" ></center>
+           <p>Curso de JAVASCRIPT desde 0,contiene 24 videos</p>
+          </div>
+        </div>
+        <p><br> </p>
+        <!-- Segunda fila  MATERIAL DE RESPALDO Y DOCUMENTACION PARA DESCARGAR-->
+        <div class="box">
+          <div class="smallbox">
+            
+            <h3>
+              
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=L1oMLsiMusQ&list=PLyvsggKtwbLX9LrDnl1-K6QtYo7m0yXWB"
+                >VIDEO TUTORIAL DE JAVA</a>
+            </h3>
+            <center><img class="redimensionar" src="imagenes/ja1.jpg" ></center>
+           <p>Curso de JAVA desde 0,contiene 48 videos</p>
+          </div>
+        </div>  
+
+<p><br> </p>
+<p><br> </p>
+<p><br> </p>
+
       </div>
+
+      <div id="right">
+
+        <div class="boxtop"></div>
+        <div class="box">
+<!-- CALENDARIO-->
+    <div class="calendari">
+      <header><h1>CALENDARIO</h1></header>
+      <h4>JUNIO 2023</h4>
+      <ol>
+         <li class="day-name"><h2>Lun</h2></li>
+       <li class="day-name"><h2>Mar</h2></li>
+        <li class="day-name"><h2>Mie</h2></li>
+       <li class="day-name"><h2>Jue</h2></li>
+        <li class="day-name"><h2>Vie</h2></li>
+        <li class="day-name"><h2>Sab</h2></li>
+       <li class="day-name"><h2>Dom</h2></li>
+      </ol>
+       <ol>
+         <li class="first_day"><h2>1</h2></li>
+       <li><h2>2</h2></li>
+        <li><h2>3</h2></li>
+       <li><h2>4</h2></li>
+        <li><h2>5</h2></li>
+        <li><h2>6</h2></li>
+       <li><h2>7</h2></li>
+        <li><h2>8</h2></li>
+        <li><h2>9</h2></li>
+        <li><h2>10</h2></li>
+        <li><h2>11</h2></li>
+       <li ><h2>12</h2></li>
+        <li><h2>13</h2></li>
+        <li><h2>14</h2></li>
+         <li><h2>15</h2></li>
+        <li><h2>16</h2></li>
+       <li class="actual"><h2>17</h2></li>
+        <li><h2>18</h2></li>
+        <li><h2>19</h2></li>
+         <li><h2>20</h2></li>
+        <li><h2>21</h2></li>
+       <li><h2>22</h2></li>
+        <li><h2>23</h2></li>
+        <li><h2>24</h2></li>
+        <li><h2>25</h2></li>
+        <li><h2>26</h2></li>
+       <li><h2>27</h2></li>
+        <li><h2>28</h2></li>
+        <li><h2>29</h2></li>
+         <li><h2>30</h2></li>
+        <li><h2>31</h2></li>              
+    
+       </ol>
+    
+     </div>
+
+     <!-- FIN -->
     </div>
+      
+  </div>
+  </div>
+    
   </body>
 </html>
